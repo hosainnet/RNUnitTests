@@ -3,9 +3,33 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "react-native start"
+    "start": "react-native start",
+    "test": "rm -rf ./node_modules/jest-cli/.haste_cache && jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/fbjs"
+    ],
+    "verbose": true,
+    "collectCoverage": true
   },
   "dependencies": {
     "react-native": "^0.18.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^6.0.1",
+    "jest-cli": "^0.8.2",
+    "react-addons-test-utils": "^0.14.6"
   }
 }
