@@ -2,8 +2,7 @@
 
 A React Native project containing examples of how to test RN component code, both a rendered output and plain JS functions.
 
-The code is mainly based on the movies app from RN's official docs. More explaination here: [https://hosain.net/2016/01/31/unit-testing-react-native-components.html](Unit Testing React Native Components
-)
+The code is mainly based on the movies app from RN's official docs. More explaination here: [Unit Testing React Native Components](https://hosain.net/2016/01/31/unit-testing-react-native-components.html)
 
 # Running the tests
 
